@@ -1,0 +1,20 @@
+
+temp.md
+
+# Build outputs
+*.class
+*.ser
+banking_state.properties
+transaction_log.txt
+banking-migrations.properties
+backups/
+banking-state-readme.txt
+
+# IDE artifacts
+.idea/
+*.iml
+.vscode/
+
+
+wiki
+
