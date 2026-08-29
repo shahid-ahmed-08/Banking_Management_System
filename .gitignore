@@ -1,20 +1,40 @@
+# =============================================================
+#  Shahid National Bank — .gitignore
+#  Only source code, docs, configs, and scripts are tracked.
+# =============================================================
 
-temp.md
-
-# Build outputs
+# ── Compiled & build outputs ──────────────────────────────────
+build/
+target/
 *.class
-*.ser
-banking_state.properties
-transaction_log.txt
-banking-migrations.properties
-backups/
-banking-state-readme.txt
+*.jar
+!lib/**/*.jar
 
-# IDE artifacts
+# ── Runtime data & logs ───────────────────────────────────────
+*.ser
+*.log
+*.properties
+transaction_log.txt
+banking_state.properties
+banking-migrations.properties
+banking-state-readme.txt
+backups/
+
+# ── IDE / Editor artifacts ────────────────────────────────────
 .idea/
 *.iml
 .vscode/
+*.swp
+*.swo
+*.DS_Store
 
+# ── OS noise ──────────────────────────────────────────────────
+Thumbs.db
+desktop.ini
 
-wiki
+# ── Temporary / scratch ───────────────────────────────────────
+temp.md
+scratch/
 
+# ── Maven wrapper cache (keep wrapper scripts, ignore downloads)
+.maven/repository/
